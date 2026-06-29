@@ -1,13 +1,28 @@
-function Navbar() {
+import "./Navbar.css";
+import { FaShoppingCart, FaUserCircle } from "react-icons/fa";
+
+function Navbar({ cartCount }) {
   return (
     <nav className="navbar">
-      <h2>🍕 PizzaFox</h2>
+      <div className="logo">
+        🍕 PizzaFox
+      </div>
 
-      <ul>
+      <ul className="menu">
         <li>Trang chủ</li>
         <li>Thực đơn</li>
-        <li>Giỏ hàng</li>
+        <li>Khuyến mãi</li>
+        <li>Liên hệ</li>
       </ul>
+
+      <div className="actions">
+        <div className="cart">
+          <FaShoppingCart />
+          <span>{cartCount}</span>
+        </div>
+
+        <FaUserCircle className="user-icon" />
+      </div>
     </nav>
   );
 }

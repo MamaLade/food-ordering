@@ -1,0 +1,57 @@
+.category {
+
+    padding: 70px 40px;
+
+    text-align: center;
+
+}
+
+.category h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 40px;
+
+}
+
+.category-list {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+.category-card {
+
+    background: white;
+
+    padding: 20px 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+.category-card:hover{
+
+    transform: translateY(-8px);
+
+    background:#ff6b00;
+
+    color:white;
+
+}

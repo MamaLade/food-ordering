@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
+
+  background: white;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6b00;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.menu li {
+  cursor: pointer;
+  transition: color .3s ease;
+  font-weight: 600;
+}
+
+.menu li:hover {
+  color: #ff6b00;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.cart {
+  position: relative;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ff6b00;
+}
+
+.cart span {
+  position: absolute;
+
+  top: -8px;
+  right: -10px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: red;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 11px;
+}
+
+.user-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: #555;
+}
+
+.user-icon:hover {
+  color: #ff6b00;
+}

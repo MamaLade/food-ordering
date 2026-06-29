@@ -1,0 +1,56 @@
+.food-section {
+  padding: 70px 40px;
+}
+
+.food-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.food-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.food-card {
+  width: 260px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+
+  text-align: center;
+
+  transition: .3s;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+}
+
+.food-image {
+  font-size: 70px;
+}
+
+.food-card h3 {
+  margin: 15px 0;
+}
+
+.food-card p {
+  color: gray;
+}
+
+.food-card h2 {
+  color: #ff6b00;
+}
+
+.food-card button {
+  width: 100%;
+}

@@ -1,21 +1,30 @@
-import Navbar from "./components/Navbar/Navbar";
+import { useState } from "react";
+
 import "./App.css";
 
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Category from "./components/Category/Category";
+import FoodList from "./components/FoodList/FoodList";
+
 function App() {
+
+  const [cartCount, setCartCount] = useState(0);
+
+  const addToCart = () => {
+    setCartCount(cartCount + 1);
+  };
+
   return (
-    <div className="container">
-      <Navbar />
+    <>
+      <Navbar cartCount={cartCount} />
 
-      <h1>Restaurant Ordering System</h1>
+      <Hero />
 
-      <h2>Bàn số 12</h2>
+      <Category />
 
-      <p>Chào mừng bạn đến với nhà hàng.</p>
-
-      <button>🍔 Burger</button>
-      <button>🍕 Pizza</button>
-      <button>🥤 Đồ uống</button>
-    </div>
+      <FoodList addToCart={addToCart} />
+    </>
   );
 }
 

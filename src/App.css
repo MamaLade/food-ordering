@@ -1,52 +1,16 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f6f6;
 }
 
 .container {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
+  padding: 30px;
+}
+.logo {
+    transition: transform 0.3s ease;
 }
 
-button {
-  padding: 12px 24px;
-  margin: 10px;
-  border: none;
-  background: orange;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ff6600;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: #ff6600;
-    color: white;
-
-    padding: 15px 40px;
-
-    border-radius: 10px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.navbar li {
-    cursor: pointer;
-}
-
-.navbar li:hover {
-    color: yellow;
+.logo:hover {
+    transform: scale(1.05);
 }
